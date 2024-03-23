@@ -4,30 +4,40 @@
     font-weight: 400;
     font-style: normal;}
 
-body{ background-image: url("/image/paper.jpeg");}
+body{ 
+    /*background-image: url("/image/paper.jpeg");*/
+}
 
 /********************* 배너 설정 *************************/
 h1{ color:#412312 ;
     font-size: 50px;
     text-align: center;
     padding: 10px;
-    background:#dfdfb1; 
+    margin-left: 100px;
+    /*background:#dfdfb1; 
     border: 5px double #221304;
-    /*  라인 색상,굵기,선종류 설정가능  */
-    border-radius:10px;
-    /*  테두리 둥근처리 숫자로 조정가능  */
+    border-radius:10px;*/
   }
 
-.texttag{color:chocolate;}
+.dsl{
+    width: 80px;
+    height: 80px; 
+    float: right;  
+}
+.texttag{
+    color:chocolate;
+    margin: 0 100px;
+}
 
 .search-box{
     float:left;
     height: 30px;
-    width: 1000px;
+    width: 900px;
     background-color: white;
     border-radius: 40px;
     padding: 10px;
     border: 1px solid #f9deec;
+    margin-left: 100px;
 }
 
 .search-txt{
@@ -78,6 +88,7 @@ h1{ color:#412312 ;
 
 h2{ color:#412312 ;
     font-size: 30px;
+    margin:0 100px;
 }
 body {
     margin: 0;
@@ -85,37 +96,26 @@ body {
     font-family: Arial, sans-serif;
 }
 /********************* 식당 리스트 설정 *************************/
-.container {
-    display: flex;
-    overflow-x: auto;
-}
-
-.container::-webkit-scrollbar {
-    width: 8px;
-}
-
-.container::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-.container::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.2);
-    border-radius: 4px;
-}
-
-.list-wrapper {
-    flex: 1;
-    padding: 20px;
-}
-
 .list {
-    background: #fcfcf4;
+    background: #faf4fd;
     border-radius: 40px;
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    border: 1px solid #f9deec;
+    margin:0 100px;
     max-height: 300px;
-    overflow-y: auto;
+    overflow-y: auto; /* 스크롤을 가능하게 하면서 */
+}
+
+/* 웹 브라우저별로 스크롤바를 숨기는 스타일 */
+/* Chrome, Edge, Safari */
+.list::-webkit-scrollbar {
+    display: none; /* 스크롤바를 화면에 표시하지 않음 */
+}
+
+/* Firefox */
+.list {
+    scrollbar-width: none; /* Firefox에서 스크롤바를 숨깁니다 */
 }
 
 .list li {
@@ -131,18 +131,19 @@ body {
     display: block;
 }
 
-.list a:hover {
+.list li:hover {
     background-color: #f0f0f0;
 }
-
 
 
 /********************* 이미지 리스트 설정 *************************/
 
 h3{ color:#412312 ;
     font-size: 30px;
+    margin:0 100px;
 }
 
+.문단2{margin:0 100px;}
 .imgList {
     background: #fcfcf4;
     border-radius: 40px;
@@ -176,6 +177,9 @@ h3{ color:#412312 ;
 
 .imgD {
     width: 110%;
+    text-align: center;
+    align-content: center;
+    border-radius: 10%;
     height: 82%;
     object-fit: cover;
 }
