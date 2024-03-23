@@ -1,5 +1,5 @@
 $.ajax({
-  url: '/csv/채민이_정통집.csv',
+  url: '/csv/정통집.csv',
   dataType: 'text'
 }).done(successFunction);
 
