@@ -8,9 +8,8 @@ app.secret_key = secrets.token_hex(16)
 
 # 메인 페이지 라우트
 @app.route('/')
-
-@app.route('/main_page')
-def main_page():
-    return render_template('main_page.html')
+@app.route('/myform')
+def myform():
+    return render_template('myform.html')
 
 app.run()
