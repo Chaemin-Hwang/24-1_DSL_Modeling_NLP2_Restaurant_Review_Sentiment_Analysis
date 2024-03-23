@@ -15,10 +15,16 @@ body {
     padding: 10px;
   }
 
+.sikdang_inform {
+  color:#8a8684
+}
 
 .sikdang_inform {
-    color:#8a8684
+    border-bottom: 2px solid #000; /* 선의 스타일 및 색상을 여기에 지정합니다. */
+    margin-bottom: 20px; /* 필요에 따라 여백을 조정합니다. */
+    padding-bottom: 10px; /* 필요에 따라 여백을 조정합니다. */
 }
+
 
 
 .image-container {
@@ -85,12 +91,8 @@ body {
 .selected {
   font-weight: bold; /* 선택된 탭의 텍스트를 굵게 합니다. */
   z-index: 1; /* 다른 탭보다 위에 표시되도록 z-index를 높입니다. */
-<<<<<<< Updated upstream
   transition: background-color 0.3s ease; /* 배경색 변경 시 부드럽게 전환되도록 설정 */
   background: transparent;
-=======
-  transition: background-color 0.5s ease; /* 배경색 변경 시 부드럽게 전환되도록 설정 */
->>>>>>> Stashed changes
 }
 
 .select_box {

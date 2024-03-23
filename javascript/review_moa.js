@@ -1,50 +1,39 @@
-function handleFiles(files) {
-    if (files.length > 0) {
-      const file = files[0];
-      parseCSV(file);
+$.ajax({
+  url: '/csv/채민이_정통집.csv',
+  dataType: 'text'
+}).done(successFunction);
+
+function successFunction(data) {
+  var allRows = data.split(/\r?\n|\r/);
+  var table = '<table>';
+  for (var singleRow = 0; singleRow < allRows.length; singleRow++) {
+    if (singleRow === 0) {
+      table += '<thead>';
+      table += '<tr>';
+    } else {
+      table += '<tr>';
     }
-  }
-  
-  function parseCSV(file) {
-    const reader = new FileReader();
-    
-    reader.onload = function(event) {
-      const csvData = event.target.result;
-      Papa.parse(csvData, {
-        header: true,
-        skipEmptyLines: true,
-        complete: function(results) {
-          console.log(results);
-          displayReviews(results.data);
-        }
-      });
-    };
-    
-    reader.readAsText(file);
-  }
-  
-  function displayReviews(reviews) {
-    const container = document.getElementById('reviews-container');
-    container.innerHTML = ''; // Clear previous content
-    
-    // Create HTML elements for each review and append to the container
-    reviews.forEach(review => {
-      const reviewDiv = document.createElement('div');
-      reviewDiv.className = 'review';
-      
-      // You may need to change 'reviewer' and 'text' to match the CSV column names
-      const reviewerDiv = document.createElement('div');
-      reviewerDiv.className = 'reviewer';
-      reviewerDiv.textContent = review.reviewer;
-      
-      const textDiv = document.createElement('div');
-      textDiv.className = 'text';
-      textDiv.textContent = review.text;
-      
-      reviewDiv.appendChild(reviewerDiv);
-      reviewDiv.appendChild(textDiv);
-      
-      container.appendChild(reviewDiv);
-    });
-  }
-  
+    var rowCells = allRows[singleRow].split(',');
+    for (var rowCell = 0; rowCell < rowCells.length; rowCell++) {
+      if (singleRow === 0) {
+        table += '<th>';
+        table += rowCells[rowCell];
+        table += '</th>';
+      } else {
+        table += '<td>';
+        table += rowCells[rowCell];
+        table += '</td>';
+      }
+    }
+    if (singleRow === 0) {
+      table += '</tr>';
+      table += '</thead>';
+      table += '<tbody>';
+    } else {
+      table += '</tr>';
+    }
+  } 
+  table += '</tbody>';
+  table += '</table>';
+  $('body').append(table);
+}
