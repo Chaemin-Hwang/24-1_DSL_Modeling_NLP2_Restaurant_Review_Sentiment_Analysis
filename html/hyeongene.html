@@ -1,31 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="Description" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/hyeongene.css">
-</head>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/review_채민.css">
+        <script src="https://kit.fontawesome.com/b77a7bd16e.js" crossorigin="anonymous"></script>
+    </head>
 
-<body>
-   <div class="container">
-    <div class="box_txt">
-        <div class="emoji">
-        </div> 
-        <div class="gpt_txt">ChatGPT로 카카오 리뷰를 요약했어요.</div>
-    </div>
-    <div class="select_box">
-        ::before
-        <button id="positiveButton" class="selected">긍정</button>
-        <button id="negativeButton" class>부정</button>
-    </div>
-    <div class="content_shape">
-     <div class="content_box>
-        <div id="reviewText"> 이 제품은 정말 좋습니다! </div>
-     </div>
-   </div>
-   <script src="script.js"></script>
-</body>
+    <body>
+        <div class="logo">
+            <h2>
+                <i class="fa-solid fa-utensils"></i>
+                <span>진실의 입 메타베타ver<span>
+                <i class="fa-solid fa-bowl-food"></i>
+            </h2>
+        </div>
+        
+        <div class="image-container">
+            <img src="/image/돈가스1.jpg" alt="Image 1">
+            <img src="/image/돈가스2.jpg" alt="Image 2">
+            <img src="/image/돈가스3.jpg" alt="Image 3">
+            <img src="/image/돈가스4.jpg" alt="Image 4">
+            <img src="/image/돈가스5.jpg" alt="Image 5">
+        </div>
+
+        <div class="sikdang_name">
+            <h1>
+                아소비바
+            </h1>
+        </div>
+
+        <div class="sikdang_inform">
+            <h3>
+                양식<br />
+                서울특별시 서대문구 연세로11길 27 1층
+            </h3>
+        </div>
+
+        
+        <div class="review-container">
+            <div class="box_txt">
+                <div class="emoji"></div>
+                <div class="gpt_txt">ChatGPT로 네이버 리뷰를 요약했어요.</div>
+            </div>
+            <div class="select_box">
+                <div id="positive_Buttons" class="selected">
+                    <button onclick="showReview('positive')">긍정 리뷰 요약</button>
+                </div>
+                <div id="negative_Buttons" class="selected">
+                    <button onclick="showReview('negative')">부정 리뷰 요약</button>
+                </div>
+            </div>
+            <div id="reviews">
+                <div id="positive" class="review" style="display:block;">
+                    <p>정말 좋았어요! 다음에 또 이용할게요.</p>
+                </div>
+                <div id="negative" class="review" style="display:none;">
+                    <p>시설과 위치는 만족스러운 반면 친절도, 청결도, 방음 등 몇몇 문제가 있습니다. 객실 내 청소상태 부족 및 먼지, 벌레 등의 문제, 온풍기 난방으로 발생하는 건조함, 샤워실의 좁은 공간, 추가요금에 대한 이해 부족 등이 언급되었습니다. 그러나 조식은 맛있으며, 펍도 유쾌하다는 평가가 있습니다. 가격 대비 만족도는 쏘쏘하며, 주변도로의 소음은 문제가 될 수 있습니다.
+                    </p>
+                </div>
+            </div>
+            <p id="view-all-reviews">후기 전체보기</p>
+        </div>
+        
+
+        <script src="/javascript/review_채민.js"></script>
+        </script>
+        
+        
+
+    </body>
+    
 </html>
 
 
