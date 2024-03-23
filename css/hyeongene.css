@@ -98,8 +98,15 @@
     transition: left 100ms ease-in-out;
 }
 
+.select_box >div:nth-of-type(n + 2) {
+    left: 50%;
+}
+
 .select_box> div {
-    flex: 1 1 0%;
+    flex: 1;
+     flex-grow: 1;
+     flex-shrink: 1;
+
     display: flex;
     position: absolute;
     width: 50%;
@@ -121,30 +128,47 @@
     font-weight: bold;
 }
 
-
-
-.review_content {
-    display: inline;
-    word-break: break-all;
+.content_shape {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-top: 0.8rem;
+    padding: 0.4rem 0 0;
+    row-gap: 1.2rem;
 }
 
-  
-  #reviewButtons {
-    margin-bottom: 20px;
-  }
-  
-  .review {
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-  }
-  
-  button {
+.content_box {
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+}
+
+.category {
     cursor: pointer;
     padding: 10px;
-    margin-right: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #007bff;
-    color: white;
-  }
+    margin: 5px;
+    border: 1px solid #ddd;
+}
+
+.reviews {
+    display: none;
+}
+
+.selected {
+    display: block;
+    border: 1px solid blue;
+}
+
+div {
+    margin: 0;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    padding: 0;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+}
