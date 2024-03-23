@@ -1,0 +1,232 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GmarketSansMedium', sans-serif;
+    margin: 0 150px;
+}
+
+.logo {color:#412312 ;
+    text-align: right;
+    padding: 10px;
+  }
+
+.sikdang_inform {
+    color:#8a8684
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center; /* 이미지들을 가운데 정렬합니다. */
+    align-items: center; /* 이미지들을 수직 가운데 정렬합니다. */
+    width: 100%; /* 너비를 웹사이트 전체 너비로 설정합니다. */
+    height: 230px; /* 높이를 300px로 설정합니다. */
+    overflow-x: hidden; /* 가로 스크롤을 숨깁니다. */
+    overflow-y: auto; /* 세로 스크롤을 허용합니다. */
+}
+
+
+.image-container img {
+    width: 100%; /* 이미지의 너비를 컨테이너의 가로폭에 맞춥니다. */
+    height: 100%; /* 이미지의 높이도 컨테이너와 같게 설정하여 정방형으로 만듭니다. */
+    object-fit: cover; /* 이미지의 가로 세로 비율을 유지하면서 컨테이너를 가득 채웁니다. */
+}
+
+.select_box  {
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-color: #f2f2f2;
+  border: 0.1rem solid #e6e6e6;
+  border-radius: 0.6rem 0.6rem 0 0;
+  height: 2.8rem;
+  margin-top: 1.1rem;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+/* 선택된 버튼을 나타내는 슬라이더 위치 업데이트 */
+.select_box.positive-selected:before {
+  left: 0;
+}
+
+.select_box.negative-selected:before {
+  left: 50%;
+}
+
+
+.select_box:before {
+  content: '';
+  display: flex;
+  position: absolute;
+  flex: 1;
+  left: -0.1rem;
+  top: -0.1rem;
+  width: 50%;
+  height: calc(100% + 0.2rem);
+  background-color: #ffffff;
+  border: 0.1rem solid #e6e6e6;
+  border-bottom: 0.1rem solid #ffffff;
+  border-radius: 0.6rem 0.6rem 0 0;
+  transition: left 100ms ease-in-out;
+}
+
+
+/* 선택된 버튼 스타일 */
+.selected {
+  font-weight: bold; /* 선택된 탭의 텍스트를 굵게 합니다. */
+  z-index: 1; /* 다른 탭보다 위에 표시되도록 z-index를 높입니다. */
+  transition: background-color 0.3s ease; /* 배경색 변경 시 부드럽게 전환되도록 설정 */
+  background: transparent;
+}
+
+.select_box {
+  display: flex;
+  justify-content: space-between; /* 버튼들을 양쪽 끝으로 분산 배치 */
+}
+
+/* 선택된 버튼을 가운데로 옮기기 위한 스타일 */
+.positive-selected, .negative-selected {
+  display: flex;
+  justify-content: center; /* 가운데 정렬 */
+}
+
+
+/* 리뷰 내용 스타일 */
+.review {
+  border: 1px solid #ddd; /* 리뷰 내용의 테두리를 설정 */
+  padding: 10px; /* 내용 주변의 패딩을 설정 */
+  margin-top: 10px; /* 리뷰 내용 상단의 마진을 설정 */
+  border-radius: 5px; /* 모서리를 둥글게 처리 */
+  background-color: #fff; /* 배경색을 흰색으로 설정 */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 상자 그림자 효과 추가 */
+  display: none; /* 기본적으로 리뷰 내용을 숨김 */
+  /* 추가적으로 텍스트 정렬, 글꼴 크기 등의 스타일을 설정할 수 있습니다. */
+  text-align: left; /* 텍스트를 왼쪽 정렬 */
+  font-size: 20px; /* 글꼴 크기 설정 */
+  line-height: 1.6; /* 줄 간격 설정 */
+}
+
+
+button {
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 10px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  background-color: transparent;
+}
+
+.parent {
+  display: flex;
+  justify-content: center; /* 가로축 중앙 정렬 */
+  align-items: center; /* 세로축 중앙 정렬 */
+  height: 100vh; /* 부모 요소의 높이를 뷰포트의 높이와 동일하게 설정합니다. */
+}
+
+
+/* 클릭됐을 때 적용될 새로운 버튼 스타일 */
+.active {
+  transition: background-color 0.3s ease; /* 배경색 변경 시 부드럽게 전환되도록 설정 */
+  background-color: white; /* 버튼 클릭 시 배경색을 하얀색으로 변경 */
+}
+
+/* 긍정 리뷰 버튼의 스타일 */
+#positive_Buttons {
+  position: absolute;
+  left: 25%; /* 부모의 가로 길이에 대한 25% 위치에 배치 */
+}
+
+/* 부정 리뷰 버튼의 스타일 */
+#negative_Buttons {
+  position: absolute;
+  right: 25%; /* 부모의 가로 길이에 대한 75% 위치에 배치 */
+}
+
+
+#view-all-reviews:hover {
+    background-color: #ffffff;
+  }
+
+#view-all-reviews {
+   text-align: center;
+    background: none; /* 배경색 제거 */
+    color: #000; /* 글자색 설정, 원하는 색상으로 변경 가능 */
+    border: none; /* 테두리 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 40px;
+    cursor: pointer; /* 마우스 오버시 커서 변경 */
+    font-family: inherit; /* 주변 텍스트와 동일한 폰트 적용 */
+    font-size: inherit; /* 주변 텍스트와 동일한 폰트 사이즈 적용 */
+  }
+  
+.box_txt {
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 2rem;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a1a1a;
+    position: relative;
+    padding: 10px
+} 
+
+.emoji{
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  margin-right: 0.6rem;
+  pointer-events: none;
+}
+
+.emoji:before {
+  content: '';
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-flex: 0;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: 2rem;
+  width: 2rem;
+  background-image: url(https://yaimg.yanolja.com/stay/static/images/img_ai_emoji-48.gif);
+  background-repeat: no-repeat;
+  background-size: 2.2rem 2.2rem;
+  overflow: hidden;
+  border-radius: 2rem;
+  background-position: center center;
+}
+
+.gpt_txt {
+  -webkit-box-align: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  max-height: 2rem;
+  line-height: 2rem;
+  margin-top: 0.2rem;
+  
+}
