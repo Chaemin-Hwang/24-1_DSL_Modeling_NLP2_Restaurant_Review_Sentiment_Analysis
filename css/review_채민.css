@@ -117,7 +117,7 @@ body {
 
 button {
   font-family: 'GmarketSansMedium', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   cursor: pointer;
   padding: 10px;
   margin-right: 10px;
@@ -126,6 +126,14 @@ button {
   color: black;
   background-color: transparent;
 }
+
+.parent {
+  display: flex;
+  justify-content: center; /* 가로축 중앙 정렬 */
+  align-items: center; /* 세로축 중앙 정렬 */
+  height: 100vh; /* 부모 요소의 높이를 뷰포트의 높이와 동일하게 설정합니다. */
+}
+
 
 /* 클릭됐을 때 적용될 새로운 버튼 스타일 */
 .active {
