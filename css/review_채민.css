@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&display=swap');
+*{ font-family: "Gamja Flower", sans-serif;
+    font-weight: 400;
+    font-style: normal;}
+
+h1{ color:#412312 ;
+    font-size: 50px;
+    text-align: center;
+    padding: 10px;
+    background:#dfdfb1; 
+    border: 5px double #221304;
+    /*  라인 색상,굵기,선종류 설정가능  */
+    border-radius:10px;
+    /*  테두리 둥근처리 숫자로 조정가능  */
+  }
+
