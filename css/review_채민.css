@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'GmarketSansMedium', sans-serif;
+    margin: 0 150px;
+}
+
+.logo {color:#412312 ;
+    text-align: right;
+    padding: 10px;
+  }
+
+.sikdang_inform {
+    color:#8a8684
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: center; /* 이미지들을 가운데 정렬합니다. */
+    align-items: center; /* 이미지들을 수직 가운데 정렬합니다. */
+    width: 100%; /* 너비를 웹사이트 전체 너비로 설정합니다. */
+    height: 230px; /* 높이를 300px로 설정합니다. */
+    overflow-x: hidden; /* 가로 스크롤을 숨깁니다. */
+    overflow-y: auto; /* 세로 스크롤을 허용합니다. */
+}
+
+
+.image-container img {
+    width: 100%; /* 이미지의 너비를 컨테이너의 가로폭에 맞춥니다. */
+    height: 100%; /* 이미지의 높이도 컨테이너와 같게 설정하여 정방형으로 만듭니다. */
+    object-fit: cover; /* 이미지의 가로 세로 비율을 유지하면서 컨테이너를 가득 채웁니다. */
+}
+
+.review-container {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+.review-summary {
+    padding: 15px;
+    margin-bottom: 10px;
+  }
+  
+.review-summary h2 {
+    margin: 0;
+  }
+  
+.positive {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #3c763d;
+  }
+  
+.negative {
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    color: #a94442;
+  }
+  
+
+#view-all-reviews:hover {
+    background-color: #ffffff;
+    text-decoration: underline; /* 마우스 오버시 밑줄 */
+  }
+
+#view-all-reviews {
+    background: none; /* 배경색 제거 */
+    color: #000; /* 글자색 설정, 원하는 색상으로 변경 가능 */
+    border: none; /* 테두리 제거 */
+    padding: 0; /* 패딩 제거 */
+    margin: 0; /* 마진 제거 */
+    cursor: pointer; /* 마우스 오버시 커서 변경 */
+    text-decoration: underline; /* 밑줄로 클릭 가능함을 표시 */
+    font-family: inherit; /* 주변 텍스트와 동일한 폰트 적용 */
+    font-size: inherit; /* 주변 텍스트와 동일한 폰트 사이즈 적용 */
+  }
+  
+  
