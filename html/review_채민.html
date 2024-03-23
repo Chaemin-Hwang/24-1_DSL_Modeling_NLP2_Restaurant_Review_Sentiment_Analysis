@@ -8,17 +8,57 @@
     </head>
 
     <body>
-        <h1>
-            <i class="fa-solid fa-utensils"></i>
-            <span>진실의 입 메타베타ver<span>
-            <i class="fa-solid fa-bowl-food"></i>
-        </h1>
-        <div class="image-container">
-            <img src="image1.jpg" alt="Image 1">
-            <img src="image2.jpg" alt="Image 2">
-            <img src="image3.jpg" alt="Image 3">
+        <div class="logo">
+            <h2>
+                <i class="fa-solid fa-utensils"></i>
+                <span>진실의 입 메타베타ver<span>
+                <i class="fa-solid fa-bowl-food"></i>
+            </h2>
         </div>
-    
+        
+        <div class="image-container">
+            <img src="/image/돈가스1.jpg" alt="Image 1">
+            <img src="/image/돈가스2.jpg" alt="Image 2">
+            <img src="/image/돈가스3.jpg" alt="Image 3">
+            <img src="/image/돈가스4.jpg" alt="Image 4">
+            <img src="/image/돈가스5.jpg" alt="Image 5">
+        </div>
+
+        <div class="sikdang_name">
+            <h1>
+                아소비바
+            </h1>
+        </div>
+
+        <div class="sikdang_inform">
+            <h3>
+                양식<br />
+                서울특별시 서대문구 연세로11길 27 1층
+            </h3>
+        </div>
+
+        <div class="review-container">
+            <div class="review-summary positive" onclick="toggleReview('positive-review')">
+              <h2>긍정후기 요약</h2>
+            </div>
+            <div id="positive-review" class="review-content" style="display: none;">
+              여기에 긍정적인 리뷰 요약을 입력하세요.
+            </div>
+          
+            <div class="review-summary negative" onclick="toggleReview('negative-review')">
+              <h2>부정후기 요약</h2>
+            </div>
+            <div id="negative-review" class="review-content" style="display: none;">
+              여기에 부정적인 리뷰 요약을 입력하세요.
+            </div>
+          
+            <p id="view-all-reviews">후기 전체보기</p>
+        </div>
+          
+          
+        <script src="/javascript/review_채민.js"></script>
+        
+
     </body>
     
 </html>
