@@ -20,8 +20,9 @@ h1{ color:#412312 ;
   }
 
 .dsl{
-    width: 80px;
-    height: 80px; 
+    width: 140px;
+    height: 80px;
+    margin-right: 10px; 
     float: right;  
 }
 .texttag{
@@ -32,7 +33,7 @@ h1{ color:#412312 ;
 .search-box{
     float:left;
     height: 30px;
-    width: 900px;
+    width: 1000px;
     background-color: white;
     border-radius: 40px;
     padding: 10px;
