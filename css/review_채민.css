@@ -183,13 +183,7 @@ button {
     background: none; /* 배경색 제거 */
     color: #000; /* 글자색 설정, 원하는 색상으로 변경 가능 */
     border: none; /* 테두리 제거 */
-<<<<<<< Updated upstream
-    padding: 0; /* 패딩 제거 */
     margin: 40px;
-=======
-    padding: 20px; /* 패딩 20px설정 */
-    margin: 0; /* 마진 제거 */
->>>>>>> Stashed changes
     cursor: pointer; /* 마우스 오버시 커서 변경 */
     font-family: inherit; /* 주변 텍스트와 동일한 폰트 적용 */
     font-size: inherit; /* 주변 텍스트와 동일한 폰트 사이즈 적용 */
