@@ -82,11 +82,9 @@ body {
 /* 선택된 버튼 스타일 */
 .selected {
   font-weight: bold; /* 선택된 탭의 텍스트를 굵게 합니다. */
-  color: #4CAF50; /* 선택된 탭의 텍스트 색상을 변경합니다. */
-  /* 선택된 탭의 배경색, 테두리 등을 변경할 수 있습니다. */
-  background-color: #e7e7e7; /* 예시로 배경색을 연한 회색으로 설정 */
   z-index: 1; /* 다른 탭보다 위에 표시되도록 z-index를 높입니다. */
   transition: background-color 0.3s ease; /* 배경색 변경 시 부드럽게 전환되도록 설정 */
+  background: transparent;
 }
 
 .select_box {
@@ -112,18 +110,27 @@ body {
   display: none; /* 기본적으로 리뷰 내용을 숨김 */
   /* 추가적으로 텍스트 정렬, 글꼴 크기 등의 스타일을 설정할 수 있습니다. */
   text-align: left; /* 텍스트를 왼쪽 정렬 */
-  font-size: 14px; /* 글꼴 크기 설정 */
+  font-size: 20px; /* 글꼴 크기 설정 */
   line-height: 1.6; /* 줄 간격 설정 */
 }
 
 
 button {
+  font-family: 'GmarketSansMedium', sans-serif;
+  font-size: 15px;
   cursor: pointer;
   padding: 10px;
   margin-right: 10px;
   border: none;
   border-radius: 5px;
   color: black;
+  background-color: transparent;
+}
+
+/* 클릭됐을 때 적용될 새로운 버튼 스타일 */
+.active {
+  transition: background-color 0.3s ease; /* 배경색 변경 시 부드럽게 전환되도록 설정 */
+  background-color: white; /* 버튼 클릭 시 배경색을 하얀색으로 변경 */
 }
 
 /* 긍정 리뷰 버튼의 스타일 */
@@ -149,7 +156,7 @@ button {
     color: #000; /* 글자색 설정, 원하는 색상으로 변경 가능 */
     border: none; /* 테두리 제거 */
     padding: 0; /* 패딩 제거 */
-    margin: 0; /* 마진 제거 */
+    margin: 40px;
     cursor: pointer; /* 마우스 오버시 커서 변경 */
     font-family: inherit; /* 주변 텍스트와 동일한 폰트 적용 */
     font-size: inherit; /* 주변 텍스트와 동일한 폰트 사이즈 적용 */

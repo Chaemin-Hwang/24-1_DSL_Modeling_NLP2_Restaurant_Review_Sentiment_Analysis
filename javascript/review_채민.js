@@ -29,6 +29,18 @@ document.addEventListener('DOMContentLoaded', function() {
         selectedButton.parentElement.classList.add('selected');
     }
 
+    // 모든 버튼에서 'active' 클래스를 제거하고, 클릭된 버튼에만 'active' 클래스를 추가합니다.
+    var buttons = document.querySelectorAll('#positive_Buttons button, #negative_Buttons button');
+    buttons.forEach(function(button) {
+      button.classList.remove('active'); // 모든 버튼에서 'active' 클래스 제거
+    });
+
+    // 클릭된 버튼에 'active' 클래스를 추가합니다.
+    var selectedButton = document.querySelector(`button[onclick="showReview('${type}')"]`);
+    if (selectedButton) {
+      selectedButton.classList.add('active'); // 클릭된 버튼에 'active' 클래스 추가
+    }
+
     // 선택된 버튼에 따라 슬라이더 위치를 조정합니다.
     updateSlider(type);
 }
