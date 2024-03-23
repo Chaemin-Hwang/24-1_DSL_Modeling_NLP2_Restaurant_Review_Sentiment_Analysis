@@ -1,1 +1,49 @@
-hello world
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/css/review_채민.css">
+        <script src="https://kit.fontawesome.com/b77a7bd16e.js" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    </head>
+
+    <body>
+        <div class="logo">
+            <h2>
+                <i class="fa-solid fa-utensils"></i>
+                <span>진실의 입 메타베타ver<span>
+                <i class="fa-solid fa-bowl-food"></i>
+            </h2>
+        </div>
+        
+        <div class="image-container">
+            <img src="/image/돈가스1.jpg" alt="Image 1">
+            <img src="/image/돈가스2.jpg" alt="Image 2">
+            <img src="/image/돈가스3.jpg" alt="Image 3">
+            <img src="/image/돈가스4.jpg" alt="Image 4">
+            <img src="/image/돈가스5.jpg" alt="Image 5">
+        </div>
+
+        <div class="sikdang_name">
+            <h1>
+                아소비바
+            </h1>
+        </div>
+
+        <div class="sikdang_inform">
+            <h3>
+                양식<br />
+                서울특별시 서대문구 연세로11길 27 1층
+            </h3>
+        </div>
+
+        <input type="file" id="csvFileInput" accept=".csv" onchange="handleFiles(this.files)">
+        <div id="reviews-container"></div>
+
+        <script src="/javascript/review_moa.js"></script>
+        
+
+    </body>
+    
+</html>
