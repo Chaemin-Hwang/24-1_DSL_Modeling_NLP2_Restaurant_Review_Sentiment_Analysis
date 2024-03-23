@@ -2,6 +2,11 @@ document.getElementById('view-all-reviews').addEventListener('click', function()
     window.location.href = 'review_moa.html';
   });
 
+document.addEventListener('DOMContentLoaded', function() {
+    showReview('positive');
+});
+
+
   function showReview(type) {
     // 모든 리뷰를 숨기고 모든 버튼에서 'selected' 클래스를 제거합니다.
     var reviews = document.getElementsByClassName('review');
