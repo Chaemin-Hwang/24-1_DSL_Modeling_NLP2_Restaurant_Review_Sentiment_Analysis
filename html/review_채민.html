@@ -37,23 +37,31 @@
             </h3>
         </div>
 
+        
         <div class="review-container">
-            <div class="review-summary positive" onclick="toggleReview('positive-review')">
-              <h2>긍정후기 요약</h2>
+            <div class="box_txt">
+                <div class="emoji"></div>
+                <div class="gpt_txt">ChatGPT로 네이버 리뷰를 요약했어요.</div>
             </div>
-            <div id="positive-review" class="review-content" style="display: none;">
-              여기에 긍정적인 리뷰 요약을 입력하세요.
+            <div class="select_box">
+                <div id="positive_Buttons" class="selected">
+                    <button onclick="showReview('positive')">긍정 리뷰</button>
+                </div>
+                <div id="negative_Buttons" class="selected">
+                    <button onclick="showReview('negative')">부정 리뷰</button>
+                </div>
             </div>
-          
-            <div class="review-summary negative" onclick="toggleReview('negative-review')">
-              <h2>부정후기 요약</h2>
+            <div id="reviews">
+                <div id="positive" class="review" style="display:none;">
+                    <p>정말 좋았어요! 다음에 또 이용할게요.</p>
+                </div>
+                <div id="negative" class="review" style="display:none;">
+                    <p>기대에 못 미쳤어요. 개선이 필요해 보여요.</p>
+                </div>
             </div>
-            <div id="negative-review" class="review-content" style="display: none;">
-              여기에 부정적인 리뷰 요약을 입력하세요.
-            </div>
-          
             <p id="view-all-reviews">후기 전체보기</p>
         </div>
+        
           
           
         <script src="/javascript/review_채민.js"></script>
