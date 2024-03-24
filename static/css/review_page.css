@@ -266,9 +266,27 @@ button {
 }
 
 
-
-
-
-.graphset, .describe_graph {
-  /* 필요에 따라 추가 스타일 지정 */
+.bar-chart {
+  display: inline-flex;
+  width: 50%;
+  height: 50px;
+  margin-bottom: 10px;
+  background-color: hsl(0, 0%, 99%);
 }
+
+.bar-chart > .bar {
+  display: block;
+  height: 50px;
+  text-align: right;
+  box-sizing: border-box;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+.bar-yellow {
+  background-color: #FFC107; /* yellow shade */
+}
+
+.bar-gray {
+  background-color: #9E9E9E; /* gray shade */
+  }
