@@ -268,25 +268,46 @@ button {
 
 .bar-chart {
   display: inline-flex;
-  width: 50%;
+  width: 100%;
   height: 50px;
   margin-bottom: 10px;
-  background-color: hsl(0, 0%, 99%);
+  background-color: hsl(0, 58%, 19%);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 음영 추가 */
+  border-radius: 8px; /* 모서리 둥글게 */
+
 }
 
 .bar-chart > .bar {
   display: block;
   height: 50px;
   text-align: right;
+  padding-right: 10px; /* 텍스트 패딩 */
   box-sizing: border-box;
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* 웹 글꼴 사용 */
+  line-height: 50px; /* 텍스트 수직 중앙 정렬 */
+  transition: transform 0.2s ease-in-out; /* 호버 애니메이션 */
+ 
+}
+
+.bar-chart > .bar-yellow:hover {
+  transform: scale(1.01); /* 호버 시 바 확대 */
+}
+
+.bar-chart > .bar-gray:hover {
+  transform: scale(1.1); /* 호버 시 바 확대 */
 }
 
 .bar-yellow {
-  background-color: #FFC107; /* yellow shade */
+  background-color: #28d4d1; /* yellow shade */
+  border-top-left-radius: 8px; /* 왼쪽 상단 꼭짓점 */
+  border-bottom-left-radius: 8px; /* 왼쪽 하단 꼭짓점 */
+
 }
 
 .bar-gray {
-  background-color: #9E9E9E; /* gray shade */
-  }
+  background-color: #f1448c; /* gray shade */
+  border-top-right-radius: 8px; /* 왼쪽 상단 꼭짓점 */
+  border-bottom-right-radius: 8px; /* 왼쪽 하단 꼭짓점 */
+}
+
