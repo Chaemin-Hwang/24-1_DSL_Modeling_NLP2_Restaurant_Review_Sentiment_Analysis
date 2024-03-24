@@ -23,6 +23,43 @@ p {
     text-align: center; /* 텍스트 중앙 정렬 */
 }
 
+.search{
+    height: 30px;
+    width: 1000px;
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px;
+    margin-left: 100px;
+    border: 1px solid #b1c1ff;
+}
+
+.search_txt{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0px;
+    color: #797979;
+    font-size: 16px;
+    line-height: 30px;
+    width: 800px;    
+}
+
+.search_btn{
+    color: #b1c1ff;
+    float: right;
+    width: 40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 h1 {
     text-align: center;
     padding: 10px;
