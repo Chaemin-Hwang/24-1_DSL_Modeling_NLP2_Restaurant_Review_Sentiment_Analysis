@@ -1,3 +1,4 @@
+
 document.addEventListener('DOMContentLoaded', function() {
     const canvas = document.getElementById("triangleChart");
     const ctx = canvas.getContext("2d");
@@ -33,10 +34,11 @@ document.addEventListener('DOMContentLoaded', function() {
             ctx.stroke();
         });
             // 맛, 서비스, 가격 레이블을 추가
+            ctx.font = "15px Arial";
             ctx.fillText(`맛: ${taste}%`, centerX, centerY - height / 2 - 10);
-            ctx.fillText(`서비스: ${service}%`, centerX - sideLength / 2 - 30, centerY + height / 2 + 20);
-            ctx.fillText(`가격: ${price}%`, centerX + sideLength / 2 , centerY + height / 2 + 20);
-
+            ctx.fillText(`서비스: ${service}%`, centerX - sideLength / 2 - 30, centerY + height / 2 + 10);
+            ctx.fillText(`가격: ${price}%`, centerX + sideLength / 2 -30 , centerY + height / 2 + 10);
+            
             // 사용자 데이터 비율에 따라 내부 삼각형을 그림
             // 좌표 계산 로직 수정
             const internalHeight = height * (taste / 100)/ 2;
@@ -79,5 +81,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Call the drawTriangleChart function with example parameters.
-    drawTriangleChart(ctx, 400, 40, 60, 40);
+    drawTriangleChart(ctx, 400, 94, 89, 85);
 });

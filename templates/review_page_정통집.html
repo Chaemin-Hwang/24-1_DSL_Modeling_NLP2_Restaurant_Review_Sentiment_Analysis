@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/css/review_page.css">
+        <script src="https://kit.fontawesome.com/b77a7bd16e.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="logo">
+            </a>
+            <h2>
+                <i class="fa-solid fa-utensils"></i>
+                <span><a href="/main_page" style="text-decoration: none; color: inherit;">진실의 입</a></span>
+                <i class="fa-solid fa-bowl-food"></i>
+            </h2>
+        </div>
+        
+        <div class="image-container">
+            <img src="/static/image/정통집1.jpg" alt="Image 1">
+            <img src="/static/image/정통집2.jpg" alt="Image 2">
+            <img src="/static/image/정통집3.jpg" alt="Image 3">
+            <img src="/static/image/정통집4.jpg" alt="Image 4">
+            <img src="/static/image/정통집5.jpg" alt="Image 5">
+        </div>
+
+        <div class="sikdang_name">
+            <h1>
+                정통집 신촌점
+            </h1>
+        </div>
+
+        <div class="sikdang_inform">
+            <h3>
+                돼지고기구이<br>
+                서울특별시 서대문구 연세로9길 7 1층
+            </h3>
+        </div>
+
+        
+        <div class="review-container">
+            <div class="box_txt">
+                <div class="emoji"></div>
+                <div class="gpt_txt">ChatGPT로 네이버 리뷰를 요약했어요.</div>
+            </div>
+            <div class="select_box">
+                <div id="positive_Buttons" class="selected">
+                    <button onclick="showReview('positive')">긍정 리뷰 요약</button>
+                </div>
+                <div id="negative_Buttons" class="selected">
+                    <button onclick="showReview('negative')">부정 리뷰 요약</button>
+                </div>
+            </div>
+            <div id="reviews">
+                <div id="positive" class="review" style="display:block;">
+                    <p>
+                        (1) 많은 손님들이 찾는 가격 대비 양이 많고 맛있는 식당으로 손맛 좋은 고추 맛집으로 소개되었어요.<br>
+                        (2) 고기의 질에 대한 의견은 분분하지만 다수가 맛집으로 여겨졌어요.<br>
+                        (3) 맛에 대한 찬사와 웨이팅이 길더라도 가볼만한 가게로 평가되었어요.<br>
+                        (4) 볶음밥과 음료를 서비스로 제공하는 등 손님에게 친절하고 서비스에 만족한 평이 커요.<br>
+                        (5) 돼지김치구이를 메인으로 하는데, 김치의 양이 아쉽게 느껴지는 소리도 있으나 총평은 맛집으로 인정되었어요.<br>
+                    </p>
+                </div>
+                <div id="negative" class="review" style="display:none;">
+                    <p>(1) 음식이 애매하고 후추맛이 강했으며, 껍데기가 냄새가 많이 났어요. 테이블 정리도 안 되고 알바생 예의가 부족했어요.<br> 
+
+                        (2) 고기질이 좋았지만 밥은 별로였고, 위생상태가 좋지 않아서 식욕을 살리기 어려웠어요.<br>
+                        
+                        (3) 홀 응대가 불친절하고, 고기가 딱딱하고 양도 적었어요.<br>
+                        
+                        (4) 고기가 탄 문제로 사과를 받지 못했고, 서비스와 응대가 아쉬웠어요.<br>
+                        
+                        (5) 매장이 추우며 화장실은 더럽고, 고기는 건조하고 후추 맛이 강했어요.<br>
+                    </p>
+                </div>
+            </div>
+            <p id="view-all-reviews">후기 전체보기</p>
+        </div>
+
+        
+        
+        <div class="content-wrapper">
+            <div class='graphset'>
+                <span class='graph'>
+                    <canvas id="triangleChart" width="500" height="500"></canvas>
+                    <script src="/static/javascript/graph_정통집.js" type="text/javascript"></script>
+                </span>
+            </div>
+            <div class="describe_graph">
+                <span class="highlight">"맛</span>은 훌륭하지만 <span class="highlight">서비스</span>가 별로에요<span class="highlight">"</span>
+            </div>
+        </div>
+        
+
+        <script src="/static/javascript/review_page_정통집.js"></script>
+
+    </body>
+    
+</html>
