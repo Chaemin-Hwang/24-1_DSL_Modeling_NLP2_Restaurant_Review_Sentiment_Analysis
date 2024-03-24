@@ -260,10 +260,6 @@ button {
 
 }
 
-.highlight {
-  font-size: 50px; /* 더 큰 글씨 크기로 설정 */
-  /* 또는 구체적인 글씨 크기를 지정하고 싶다면, 예: font-size: 20px; */
-}
 
 
 .bar-chart {
