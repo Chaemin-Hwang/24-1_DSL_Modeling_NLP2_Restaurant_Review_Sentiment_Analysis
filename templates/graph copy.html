@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Triangle Chart</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stacked Bar Chart</title>
+<style>
+  .bar-chart {
+    display: inline-flex;
+    width: 50%;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: hsl(0, 0%, 99%);
+  }
+
+  .bar-chart > .bar {
+    display: block;
+    height: 50px;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+
+  .bar-yellow {
+    background-color: #FFC107; /* yellow shade */
+  }
+
+  .bar-gray {
+    background-color: #9E9E9E; /* gray shade */
+  }
+</style>
 </head>
 <body>
 
-<canvas id="triangleChart" width="500" height="500"></canvas>
+<div class="bar-chart" >
+  <div class="bar bar-yellow" style="width: 87.9%;">87.9%</div>
+  <div class="bar bar-gray" style="width: 12.1%;">12.1%</div>
+</div>
 
-<script src="/javascript/graph copy.js" type="text/javascript"></script>
+<div class="bar-chart">
+  <div class="bar bar-yellow" style="width: 87.9%;">87.9%</div>
+  <div class="bar bar-gray" style="width: 12.1%;">12.1%</div>
+</div>
+
 </body>
 </html>
