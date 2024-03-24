@@ -1,5 +1,5 @@
 $.ajax({
-  url: '/csv/정통집.csv',
+  url: '/static/csv/쭈꾸미블루스.csv',
   dataType: 'text'
 }).done(successFunction);
 

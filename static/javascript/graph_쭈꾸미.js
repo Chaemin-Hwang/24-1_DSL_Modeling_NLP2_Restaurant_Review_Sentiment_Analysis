@@ -81,5 +81,5 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Call the drawTriangleChart function with example parameters.
-    drawTriangleChart(ctx, 400, 40, 60, 20);
+    drawTriangleChart(ctx, 400, 94, 89, 85);
 });

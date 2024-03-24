@@ -1,5 +1,5 @@
 document.getElementById('view-all-reviews').addEventListener('click', function() {
-    window.location.href = 'review_moa.html';
+    window.location.href = '/review_moa_정통집';
   });
 
 document.addEventListener('DOMContentLoaded', function() {
