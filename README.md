@@ -9,3 +9,20 @@
 ---
 # Overview
 
+### 1. Pipeline
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/c498282e-1dbd-411a-bcd6-9f44c222928b)
+
+### 2. Motivation
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/2fb04be8-5de7-4714-bff8-ac3e9818f709)
+
+### 4. Dataset
+
+### 5. Sentimental Analysis
+### 6. Category Classification & Text Summarization
+### 7. Results
+### 8. Limitation
+
+
+
+
+
