@@ -1,4 +1,4 @@
-# 24-1_DSL_Modeling_NLP2_진실의_입
+## 24-1_DSL_Modeling_NLP2_진실의_입
 #### 24-1_DSL_Modeling_NLP2_진실의_입 
 ##### NLP 3조 - 10기: 박성원 11기: 김민석 김현진 윤정수 황채민
 ## 주제
