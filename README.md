@@ -45,7 +45,8 @@
 
 ### 6. Results
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/8fd4abe9-3026-4bb5-b744-4609bb9c5277)
-
+저희가 소비자에게 제공하고자 했던 서비스를 간단하게나마 구현하여 프로젝트의 의도를 시각적으로 간결하게 파악할 수 있도록 하였습니다. 
+백엔드와 프론트엔드를 연결하는 등의 기술력이 부족하여 로컬 사이트에서 직접 데이터를 삽입하여 구현하였고, app.py 파일 실행을 통해 사이트를 직접 경험해보실 수 있습니다. 
 
 ### 7. Limitation
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/2aedd3ba-558e-49c4-8fac-bce96566a205)
