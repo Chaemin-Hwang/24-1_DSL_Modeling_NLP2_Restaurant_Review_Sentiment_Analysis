@@ -11,13 +11,22 @@
 ## 1. Pipeline
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/c498282e-1dbd-411a-bcd6-9f44c222928b)
 
+
+
 ## 2. Motivation
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/2fb04be8-5de7-4714-bff8-ac3e9818f709)
 긍정적인 부분에 초점이 맞춰져 있는 음식점 리뷰들 ... -> 부정적인 리뷰도 비중있게 다루는 식당 리뷰 사이트를 만들어보자!
+
+
+
 ## 3. Dataset
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/aca15096-6e81-4366-ba02-a0c163f51c99)
 
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/89ef8be3-73f4-4e78-8f0c-298db39da925)
+데이터셋의 경우 부정적 리뷰의 양이 상대적으로 많은 카카오맵 식당 리뷰 데이터를 크롤링하여 학습 데이터로 활용하였습니다. 
+리뷰를 문장 단위로 토큰화하여 긍부정 라벨을 직접 달아주었습니다. 최종 사이트 구현 시 적용 데이터셋은 네이버 리뷰를 활용하였습니다. 
+
+
 
 ## 4. Sentimental Analysis
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/c33696fe-dd6b-47f8-914f-9858c456c331)
@@ -31,6 +40,10 @@
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/59d30b9a-07f7-4096-929d-4a602b907151)
 
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/f6f72302-4173-4b4b-b410-c6b296b9d50d)
+감정분석 성능 향상을 위해 맞춤법 정제, 한국어 EDA 등을 진행하였고 유의미한 성능 향상이 있었습니다. 
+이렇게 긍정과 부정으로 분류한 리뷰 데이터를 이후 카테고리 세분화와 내용 요약 단계에서 GPT API의 인풋 데이터로 활용하였습니다. 
+
+
 
 ### 5. Category Classification & Text Summarization
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/1919ec21-3088-4240-b4a4-d6a225387425)
@@ -43,10 +56,14 @@
 
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/e0eec9d8-1af8-4c40-987e-d8bf4c09f556)
 
+
+
 ### 6. Results
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/8fd4abe9-3026-4bb5-b744-4609bb9c5277)
 저희가 소비자에게 제공하고자 했던 서비스를 간단하게나마 구현하여 프로젝트의 의도를 시각적으로 간결하게 파악할 수 있도록 하였습니다. 
 백엔드와 프론트엔드를 연결하는 등의 기술력이 부족하여 로컬 사이트에서 직접 데이터를 삽입하여 구현하였고, app.py 파일 실행을 통해 사이트를 직접 경험해보실 수 있습니다. 
+
+
 
 ### 7. Limitation
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/2aedd3ba-558e-49c4-8fac-bce96566a205)
