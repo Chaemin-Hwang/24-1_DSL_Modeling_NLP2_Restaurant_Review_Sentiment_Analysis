@@ -13,7 +13,7 @@
 
 ## 2. Motivation
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/2fb04be8-5de7-4714-bff8-ac3e9818f709)
-
+긍정적인 부분에 초점이 맞춰져 있는 음식점 리뷰들 ... -> 부정적인 리뷰도 비중있게 다루는 식당 리뷰 사이트를 만들어보자!
 ## 3. Dataset
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/aca15096-6e81-4366-ba02-a0c163f51c99)
 
@@ -37,10 +37,18 @@
 
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/aa783c25-bdc6-439f-aad9-03b7ad20669c)
 
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/617ee8cb-fa84-4770-b160-22848e2d9504)
+
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/3198fcf4-0f2f-4da8-bb75-35afb44fe69a)
+
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/e0eec9d8-1af8-4c40-987e-d8bf4c09f556)
 
 ### 6. Results
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/8fd4abe9-3026-4bb5-b744-4609bb9c5277)
+
 
 ### 7. Limitation
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/2aedd3ba-558e-49c4-8fac-bce96566a205)
 
 
 
