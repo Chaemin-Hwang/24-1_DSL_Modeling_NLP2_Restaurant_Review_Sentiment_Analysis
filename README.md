@@ -33,7 +33,9 @@
 ![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/f6f72302-4173-4b4b-b410-c6b296b9d50d)
 
 ### 5. Category Classification & Text Summarization
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/1919ec21-3088-4240-b4a4-d6a225387425)
 
+![image](https://github.com/Chaemin-Hwang/24-1_DSL_Modeling_NLP2_Restaurant_Review_Sentiment_Analysis/assets/147033744/aa783c25-bdc6-439f-aad9-03b7ad20669c)
 
 
 ### 6. Results
